@@ -16,6 +16,7 @@
 		21F703911B66D1D900C2E26B /* Setup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F703901B66D1D900C2E26B /* Setup.storyboard */; };
 		21F703931B66D1F000C2E26B /* InZleep.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F703921B66D1F000C2E26B /* InZleep.storyboard */; };
 		21F703951B66D20100C2E26B /* EndScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F703941B66D20100C2E26B /* EndScreen.storyboard */; };
+		CA03A7721B66DEDB0019B2D4 /* ZleepManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA03A7711B66DEDB0019B2D4 /* ZleepManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,9 @@
 		21F703901B66D1D900C2E26B /* Setup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setup.storyboard; sourceTree = "<group>"; };
 		21F703921B66D1F000C2E26B /* InZleep.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InZleep.storyboard; sourceTree = "<group>"; };
 		21F703941B66D20100C2E26B /* EndScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EndScreen.storyboard; sourceTree = "<group>"; };
+		CA03A7701B66DEDB0019B2D4 /* ZleepManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZleepManager.h; sourceTree = "<group>"; };
+		CA03A7711B66DEDB0019B2D4 /* ZleepManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZleepManager.m; sourceTree = "<group>"; };
+		CA03A7731B66E5CF0019B2D4 /* ZleepManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZleepManagerDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,9 @@
 				21F703901B66D1D900C2E26B /* Setup.storyboard */,
 				21F703921B66D1F000C2E26B /* InZleep.storyboard */,
 				21F703941B66D20100C2E26B /* EndScreen.storyboard */,
+				CA03A7701B66DEDB0019B2D4 /* ZleepManager.h */,
+				CA03A7711B66DEDB0019B2D4 /* ZleepManager.m */,
+				CA03A7731B66E5CF0019B2D4 /* ZleepManagerDelegate.h */,
 			);
 			path = Zleep;
 			sourceTree = "<group>";
@@ -227,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA03A7721B66DEDB0019B2D4 /* ZleepManager.m in Sources */,
 				21F703731B66D16B00C2E26B /* ViewController.m in Sources */,
 				21F703701B66D16B00C2E26B /* AppDelegate.m in Sources */,
 				21F7036D1B66D16B00C2E26B /* main.m in Sources */,
@@ -416,6 +424,7 @@
 				21F7038C1B66D16B00C2E26B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21F7038D1B66D16B00C2E26B /* Build configuration list for PBXNativeTarget "ZleepTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +433,7 @@
 				21F7038F1B66D16B00C2E26B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
