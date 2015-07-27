@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9yR-xi-K14">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,22 +14,120 @@
                         <viewControllerLayoutGuide type="bottom" id="hh0-XY-kYd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jSL-is-CyT">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQp-Zk-YrI">
-                                <rect key="frame" x="244" y="289" width="32" height="21"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="lsv-sy-MPu">
+                                <rect key="frame" x="140" y="401" width="320" height="162"/>
+                                <color key="backgroundColor" red="0.1431775029" green="1" blue="0.12997611789999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Eu9-qV-Opp"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="459724716.52586401">
+                                    <!--2015-07-27 21:18:36 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarm Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhY-ma-Cy7">
+                                <rect key="frame" x="255.5" y="385.5" width="89" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="fZD-9K-LPx">
+                                <rect key="frame" x="140" y="164.5" width="320" height="162"/>
+                                <color key="backgroundColor" red="0.1431775029" green="1" blue="0.12997611789999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="p8h-Bm-d0F"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="459724716.52586401">
+                                    <!--2015-07-27 21:18:36 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5Z-5c-2Nq">
+                                <rect key="frame" x="259.5" y="149" width="81.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X52-S0-Fxf">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Zleep" id="C5p-RO-vUo">
+                                        <barButtonItem key="leftBarButtonItem" title="Select Pet" id="xAf-Z7-ixT"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Store" id="zWI-D6-fUW"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7e-hS-tA2">
+                                <rect key="frame" x="16" y="72" width="24.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Zleep" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9T-v4-vgD">
+                                <rect key="frame" x="501" y="72" width="83" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 Hours" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ca-eD-JHd">
+                                <rect key="frame" x="523.5" y="99.5" width="60.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4R0-Bd-iCd">
+                                <rect key="frame" x="261" y="562" width="78" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Start Zleep">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="409" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeW-df-xUY">
+                                <rect key="frame" x="16" y="94" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="dhY-ma-Cy7" secondAttribute="centerX" id="3CS-Lh-YXK"/>
+                            <constraint firstItem="dhY-ma-Cy7" firstAttribute="top" secondItem="fZD-9K-LPx" secondAttribute="bottom" constant="20" id="5mf-fv-iag"/>
+                            <constraint firstAttribute="centerX" secondItem="lsv-sy-MPu" secondAttribute="centerX" id="6zU-gG-s6r"/>
+                            <constraint firstItem="D7e-hS-tA2" firstAttribute="top" secondItem="X52-S0-Fxf" secondAttribute="bottom" id="ChC-va-lnA"/>
+                            <constraint firstItem="X52-S0-Fxf" firstAttribute="leading" secondItem="jSL-is-CyT" secondAttribute="leading" id="DW5-Q9-ZWC"/>
+                            <constraint firstItem="qeW-df-xUY" firstAttribute="leading" secondItem="jSL-is-CyT" secondAttribute="leadingMargin" id="GFC-di-Ob2"/>
+                            <constraint firstAttribute="centerX" secondItem="b5Z-5c-2Nq" secondAttribute="centerX" id="GSG-el-vcl"/>
+                            <constraint firstItem="9ca-eD-JHd" firstAttribute="top" secondItem="X9T-v4-vgD" secondAttribute="bottom" constant="7" id="KDo-uj-jV2"/>
+                            <constraint firstItem="X9T-v4-vgD" firstAttribute="top" secondItem="X52-S0-Fxf" secondAttribute="bottom" id="Lws-SS-sf5"/>
+                            <constraint firstItem="hh0-XY-kYd" firstAttribute="top" secondItem="4R0-Bd-iCd" secondAttribute="bottom" constant="8" symbolic="YES" id="OMn-11-uBH"/>
+                            <constraint firstAttribute="centerX" secondItem="4R0-Bd-iCd" secondAttribute="centerX" id="OO6-NQ-6li"/>
+                            <constraint firstItem="X52-S0-Fxf" firstAttribute="top" secondItem="lpQ-JY-nfg" secondAttribute="bottom" constant="8" id="Skj-h3-3lu"/>
+                            <constraint firstItem="dhY-ma-Cy7" firstAttribute="top" secondItem="fZD-9K-LPx" secondAttribute="bottom" constant="100" id="Xib-25-f3c"/>
+                            <constraint firstItem="qeW-df-xUY" firstAttribute="top" secondItem="D7e-hS-tA2" secondAttribute="bottom" constant="1.5" id="Zcr-vs-XL3"/>
+                            <constraint firstItem="D7e-hS-tA2" firstAttribute="leading" secondItem="jSL-is-CyT" secondAttribute="leadingMargin" id="cVd-LF-U9X"/>
+                            <constraint firstItem="X52-S0-Fxf" firstAttribute="top" secondItem="jSL-is-CyT" secondAttribute="top" id="exm-gL-ZOp"/>
+                            <constraint firstItem="4R0-Bd-iCd" firstAttribute="centerX" secondItem="lsv-sy-MPu" secondAttribute="centerX" id="f19-dr-IoD"/>
+                            <constraint firstItem="lsv-sy-MPu" firstAttribute="top" secondItem="dhY-ma-Cy7" secondAttribute="bottom" constant="36" id="o0z-q9-2Yc"/>
+                            <constraint firstAttribute="centerX" secondItem="X52-S0-Fxf" secondAttribute="centerX" id="pDH-n5-GEl"/>
+                            <constraint firstItem="fZD-9K-LPx" firstAttribute="top" secondItem="b5Z-5c-2Nq" secondAttribute="bottom" constant="36" id="ptA-tj-QjN"/>
+                            <constraint firstItem="4R0-Bd-iCd" firstAttribute="top" secondItem="lsv-sy-MPu" secondAttribute="bottom" constant="40" id="sE7-LS-Rlh"/>
+                            <constraint firstItem="9ca-eD-JHd" firstAttribute="trailing" secondItem="jSL-is-CyT" secondAttribute="trailingMargin" id="t9c-km-vY0"/>
+                            <constraint firstItem="X9T-v4-vgD" firstAttribute="trailing" secondItem="jSL-is-CyT" secondAttribute="trailingMargin" id="w0S-44-JNO"/>
+                            <constraint firstAttribute="centerX" secondItem="fZD-9K-LPx" secondAttribute="centerX" id="xBk-PO-stI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="exm-gL-ZOp"/>
+                                <exclude reference="5mf-fv-iag"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VSE-W5-oJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="186" y="259"/>
+            <point key="canvasLocation" x="194" y="315"/>
         </scene>
     </scenes>
 </document>
