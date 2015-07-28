@@ -14,9 +14,11 @@
 		21F7037B1B66D16B00C2E26B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21F703791B66D16B00C2E26B /* LaunchScreen.xib */; };
 		21F703871B66D16B00C2E26B /* ZleepTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F703861B66D16B00C2E26B /* ZleepTests.m */; };
 		21F703911B66D1D900C2E26B /* Setup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F703901B66D1D900C2E26B /* Setup.storyboard */; };
-		21F703931B66D1F000C2E26B /* InZleep.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F703921B66D1F000C2E26B /* InZleep.storyboard */; };
+		21F703931B66D1F000C2E26B /* inZleep.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F703921B66D1F000C2E26B /* inZleep.storyboard */; };
 		21F703951B66D20100C2E26B /* EndScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F703941B66D20100C2E26B /* EndScreen.storyboard */; };
 		CA03A7721B66DEDB0019B2D4 /* ZleepManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA03A7711B66DEDB0019B2D4 /* ZleepManager.m */; };
+		3D5271FE1B66F52E00848882 /* inZleepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5271FD1B66F52E00848882 /* inZleepViewController.m */; };
+		3D5272001B684B7900848882 /* turtle_96x104.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5271FF1B684B7900848882 /* turtle_96x104.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +45,14 @@
 		21F703851B66D16B00C2E26B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21F703861B66D16B00C2E26B /* ZleepTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZleepTests.m; sourceTree = "<group>"; };
 		21F703901B66D1D900C2E26B /* Setup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setup.storyboard; sourceTree = "<group>"; };
-		21F703921B66D1F000C2E26B /* InZleep.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InZleep.storyboard; sourceTree = "<group>"; };
+		21F703921B66D1F000C2E26B /* inZleep.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = inZleep.storyboard; sourceTree = "<group>"; };
 		21F703941B66D20100C2E26B /* EndScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EndScreen.storyboard; sourceTree = "<group>"; };
 		CA03A7701B66DEDB0019B2D4 /* ZleepManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZleepManager.h; sourceTree = "<group>"; };
 		CA03A7711B66DEDB0019B2D4 /* ZleepManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZleepManager.m; sourceTree = "<group>"; };
 		CA03A7731B66E5CF0019B2D4 /* ZleepManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZleepManagerDelegate.h; sourceTree = "<group>"; };
+		3D5271FC1B66F52E00848882 /* inZleepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inZleepViewController.h; sourceTree = "<group>"; };
+		3D5271FD1B66F52E00848882 /* inZleepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = inZleepViewController.m; sourceTree = "<group>"; };
+		3D5271FF1B684B7900848882 /* turtle_96x104.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turtle_96x104.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +102,13 @@
 				21F703791B66D16B00C2E26B /* LaunchScreen.xib */,
 				21F7036A1B66D16B00C2E26B /* Supporting Files */,
 				21F703901B66D1D900C2E26B /* Setup.storyboard */,
-				21F703921B66D1F000C2E26B /* InZleep.storyboard */,
+				21F703921B66D1F000C2E26B /* inZleep.storyboard */,
 				21F703941B66D20100C2E26B /* EndScreen.storyboard */,
 				CA03A7701B66DEDB0019B2D4 /* ZleepManager.h */,
 				CA03A7711B66DEDB0019B2D4 /* ZleepManager.m */,
 				CA03A7731B66E5CF0019B2D4 /* ZleepManagerDelegate.h */,
+				3D5271FC1B66F52E00848882 /* inZleepViewController.h */,
+				3D5271FD1B66F52E00848882 /* inZleepViewController.m */,
 			);
 			path = Zleep;
 			sourceTree = "<group>";
@@ -111,6 +118,7 @@
 			children = (
 				21F7036B1B66D16B00C2E26B /* Info.plist */,
 				21F7036C1B66D16B00C2E26B /* main.m */,
+				3D5271FF1B684B7900848882 /* turtle_96x104.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -216,7 +224,8 @@
 				21F703951B66D20100C2E26B /* EndScreen.storyboard in Resources */,
 				21F7037B1B66D16B00C2E26B /* LaunchScreen.xib in Resources */,
 				21F703781B66D16B00C2E26B /* Images.xcassets in Resources */,
-				21F703931B66D1F000C2E26B /* InZleep.storyboard in Resources */,
+				21F703931B66D1F000C2E26B /* inZleep.storyboard in Resources */,
+				3D5272001B684B7900848882 /* turtle_96x104.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA03A7721B66DEDB0019B2D4 /* ZleepManager.m in Sources */,
+				3D5271FE1B66F52E00848882 /* inZleepViewController.m in Sources */,
 				21F703731B66D16B00C2E26B /* ViewController.m in Sources */,
 				21F703701B66D16B00C2E26B /* AppDelegate.m in Sources */,
 				21F7036D1B66D16B00C2E26B /* main.m in Sources */,
