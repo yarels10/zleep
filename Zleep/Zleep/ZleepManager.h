@@ -19,6 +19,8 @@
 
 #pragma mark - App LifeCycle methods
 
+- (void)nagUserForLeaving;
+
 // Called when the user leaves the application.
 - (void)userLeftApp;
 

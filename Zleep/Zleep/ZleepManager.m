@@ -7,6 +7,7 @@
 
 #import "ZleepManager.h"
 #import "ZleepManagerDelegate.h"
+#import <UIKit/UIKit.h>
 
 #define ZLEEP_POINTS_KEY @"totalZleepPoints"
 
@@ -29,12 +30,22 @@
 
 #pragma mark - App Events
 
+- (void)nagUserForLeaving
+{
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:2];
+    notification.alertTitle = @"Your pet might wake up!";
+    notification.alertBody = @"If you don't get back to zleep, your pet won't be happy and you will lose points!";
+    [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+}
+
 - (void)userLeftApp
 {
     NSLog(@"User left the app.");
     
     if ([self.delegate respondsToSelector:@selector(userLeftApp)])
     {
+        [self nagUserForLeaving];
         NSLog(@"Informing the delegate that we've left the app.");
         [self.delegate userLeftApp];
     }
