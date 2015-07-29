@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		216555E31B66E2F200F49F24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 216555E21B66E2F200F49F24 /* Images.xcassets */; };
+		2189E1891B681FBC0071BBE5 /* EndScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2189E1881B681FBC0071BBE5 /* EndScreenViewController.m */; };
 		21F7036D1B66D16B00C2E26B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7036C1B66D16B00C2E26B /* main.m */; };
 		21F703701B66D16B00C2E26B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7036F1B66D16B00C2E26B /* AppDelegate.m */; };
 		21F703781B66D16B00C2E26B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F703771B66D16B00C2E26B /* Images.xcassets */; };
+		21F703731B66D16B00C2E26B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F703721B66D16B00C2E26B /* ViewController.m */; };
 		21F7037B1B66D16B00C2E26B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21F703791B66D16B00C2E26B /* LaunchScreen.xib */; };
 		21F703871B66D16B00C2E26B /* ZleepTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F703861B66D16B00C2E26B /* ZleepTests.m */; };
 		21F703911B66D1D900C2E26B /* Setup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F703901B66D1D900C2E26B /* Setup.storyboard */; };
@@ -33,12 +36,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		216555E21B66E2F200F49F24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2189E1871B681FBC0071BBE5 /* EndScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndScreenViewController.h; sourceTree = "<group>"; };
+		2189E1881B681FBC0071BBE5 /* EndScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndScreenViewController.m; sourceTree = "<group>"; };
 		21F703671B66D16B00C2E26B /* Zleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F7036B1B66D16B00C2E26B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21F7036C1B66D16B00C2E26B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21F7036E1B66D16B00C2E26B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		21F7036F1B66D16B00C2E26B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		21F703771B66D16B00C2E26B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		21F703711B66D16B00C2E26B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		21F703721B66D16B00C2E26B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		21F7037A1B66D16B00C2E26B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		21F703801B66D16B00C2E26B /* ZleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F703851B66D16B00C2E26B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,6 +109,9 @@
 				21F7036E1B66D16B00C2E26B /* AppDelegate.h */,
 				21F7036F1B66D16B00C2E26B /* AppDelegate.m */,
 				21F703771B66D16B00C2E26B /* Images.xcassets */,
+				21F703711B66D16B00C2E26B /* ViewController.h */,
+				21F703721B66D16B00C2E26B /* ViewController.m */,
+				216555E21B66E2F200F49F24 /* Images.xcassets */,
 				21F703791B66D16B00C2E26B /* LaunchScreen.xib */,
 				21F7036A1B66D16B00C2E26B /* Supporting Files */,
 				21F703901B66D1D900C2E26B /* Setup.storyboard */,
@@ -111,6 +122,8 @@
 				CA03A7731B66E5CF0019B2D4 /* ZleepManagerDelegate.h */,
 				3D5271FC1B66F52E00848882 /* inZleepViewController.h */,
 				3D5271FD1B66F52E00848882 /* inZleepViewController.m */,
+				2189E1871B681FBC0071BBE5 /* EndScreenViewController.h */,
+				2189E1881B681FBC0071BBE5 /* EndScreenViewController.m */,
 			);
 			path = Zleep;
 			sourceTree = "<group>";
@@ -230,6 +243,9 @@
 				21F703781B66D16B00C2E26B /* Images.xcassets in Resources */,
 				21F703931B66D1F000C2E26B /* inZleep.storyboard in Resources */,
 				3D5272001B684B7900848882 /* turtle_96x104.png in Resources */,
+				216555E31B66E2F200F49F24 /* Images.xcassets in Resources */,
+				21F7037B1B66D16B00C2E26B /* LaunchScreen.xib in Resources */,
+				21F703931B66D1F000C2E26B /* InZleep.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +267,7 @@
 				3D5271FE1B66F52E00848882 /* inZleepViewController.m in Sources */,
 				21F703701B66D16B00C2E26B /* AppDelegate.m in Sources */,
 				D470E1381B685FD1001BB9E7 /* SetupViewController.m in Sources */,
+				2189E1891B681FBC0071BBE5 /* EndScreenViewController.m in Sources */,
 				21F7036D1B66D16B00C2E26B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
