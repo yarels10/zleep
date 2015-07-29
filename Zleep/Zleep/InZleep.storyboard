@@ -1,7 +1,86 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vb3-HZ-RTZ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--In Zleep View Controller-->
+        <scene sceneID="L6v-R0-4cj">
+            <objects>
+                <viewController id="vb3-HZ-RTZ" customClass="inZleepViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MKX-81-bIt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yu9-SP-5fv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VuG-DD-Ktm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarm Set For:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWz-Cm-p8l">
+                                <rect key="frame" x="180" y="549" width="110" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="turtle_96x104.png" translatesAutoresizingMaskIntoConstraints="NO" id="r7Y-Ha-IlR">
+                                <rect key="frame" x="191" y="379" width="193" height="146"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jF-bh-F4L">
+                                <rect key="frame" x="528" y="20" width="72" height="30"/>
+                                <state key="normal" title="Add Audio">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEp-zN-YQ9">
+                                <rect key="frame" x="307" y="549" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" blank" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nr-5m-m51">
+                                <rect key="frame" x="263" y="316" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="turtle_96x104.png" translatesAutoresizingMaskIntoConstraints="NO" id="2zK-T6-gFY">
+                                <rect key="frame" x="180" y="48" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="KWz-Cm-p8l" secondAttribute="centerX" constant="65" id="1oA-Uf-aX8"/>
+                            <constraint firstAttribute="centerX" secondItem="2zK-T6-gFY" secondAttribute="centerX" id="9ZK-Ti-i1g"/>
+                            <constraint firstItem="IEp-zN-YQ9" firstAttribute="leading" secondItem="KWz-Cm-p8l" secondAttribute="trailing" constant="8" id="AHd-Nu-LPH"/>
+                            <constraint firstItem="KWz-Cm-p8l" firstAttribute="top" secondItem="r7Y-Ha-IlR" secondAttribute="bottom" constant="24" id="ExY-BV-oxD"/>
+                            <constraint firstAttribute="centerX" secondItem="r7Y-Ha-IlR" secondAttribute="centerX" constant="12.5" id="FlH-Jx-B9j"/>
+                            <constraint firstItem="2zK-T6-gFY" firstAttribute="top" secondItem="MKX-81-bIt" secondAttribute="bottom" constant="33" id="Th5-RO-Tzq"/>
+                            <constraint firstAttribute="centerY" secondItem="r7Y-Ha-IlR" secondAttribute="centerY" id="WDg-yW-j7X"/>
+                            <constraint firstItem="2jF-bh-F4L" firstAttribute="top" secondItem="MKX-81-bIt" secondAttribute="bottom" id="dXf-h3-drR"/>
+                            <constraint firstAttribute="centerX" secondItem="5nr-5m-m51" secondAttribute="centerX" constant="13" id="eME-Tx-HwR"/>
+                            <constraint firstItem="Yu9-SP-5fv" firstAttribute="top" secondItem="KWz-Cm-p8l" secondAttribute="bottom" constant="30" id="fU9-C9-xNW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2jF-bh-F4L" secondAttribute="trailing" id="gCa-2F-1OA"/>
+                            <constraint firstItem="Yu9-SP-5fv" firstAttribute="top" secondItem="IEp-zN-YQ9" secondAttribute="bottom" constant="30.5" id="rMk-tM-SZt"/>
+                            <constraint firstItem="r7Y-Ha-IlR" firstAttribute="top" secondItem="5nr-5m-m51" secondAttribute="bottom" constant="42" id="wHd-Zm-vbM"/>
+                            <constraint firstAttribute="centerX" secondItem="r7Y-Ha-IlR" secondAttribute="centerX" id="wTM-JT-H2g"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="WDg-yW-j7X"/>
+                                <exclude reference="wTM-JT-H2g"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="Quotes" destination="5nr-5m-m51" id="XOB-Kx-BdI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kAp-BT-2T4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="490" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="turtle_96x104.png" width="96" height="104"/>
+    </resources>
 </document>
