@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		21F7036D1B66D16B00C2E26B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7036C1B66D16B00C2E26B /* main.m */; };
 		21F703701B66D16B00C2E26B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7036F1B66D16B00C2E26B /* AppDelegate.m */; };
-		21F703731B66D16B00C2E26B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F703721B66D16B00C2E26B /* ViewController.m */; };
 		21F703781B66D16B00C2E26B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F703771B66D16B00C2E26B /* Images.xcassets */; };
 		21F7037B1B66D16B00C2E26B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21F703791B66D16B00C2E26B /* LaunchScreen.xib */; };
 		21F703871B66D16B00C2E26B /* ZleepTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F703861B66D16B00C2E26B /* ZleepTests.m */; };
 		21F703911B66D1D900C2E26B /* Setup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F703901B66D1D900C2E26B /* Setup.storyboard */; };
 		21F703931B66D1F000C2E26B /* inZleep.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F703921B66D1F000C2E26B /* inZleep.storyboard */; };
 		21F703951B66D20100C2E26B /* EndScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F703941B66D20100C2E26B /* EndScreen.storyboard */; };
-		CA03A7721B66DEDB0019B2D4 /* ZleepManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA03A7711B66DEDB0019B2D4 /* ZleepManager.m */; };
 		3D5271FE1B66F52E00848882 /* inZleepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5271FD1B66F52E00848882 /* inZleepViewController.m */; };
 		3D5272001B684B7900848882 /* turtle_96x104.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5271FF1B684B7900848882 /* turtle_96x104.png */; };
+		CA03A7721B66DEDB0019B2D4 /* ZleepManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA03A7711B66DEDB0019B2D4 /* ZleepManager.m */; };
+		D470E1381B685FD1001BB9E7 /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D470E1371B685FD1001BB9E7 /* SetupViewController.m */; };
 		D4E032D61B66DA8900380649 /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E032D51B66DA8900380649 /* BG.png */; };
 /* End PBXBuildFile section */
 
@@ -38,8 +38,6 @@
 		21F7036C1B66D16B00C2E26B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21F7036E1B66D16B00C2E26B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		21F7036F1B66D16B00C2E26B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		21F703711B66D16B00C2E26B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		21F703721B66D16B00C2E26B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		21F703771B66D16B00C2E26B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		21F7037A1B66D16B00C2E26B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		21F703801B66D16B00C2E26B /* ZleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,12 +46,14 @@
 		21F703901B66D1D900C2E26B /* Setup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setup.storyboard; sourceTree = "<group>"; };
 		21F703921B66D1F000C2E26B /* inZleep.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = inZleep.storyboard; sourceTree = "<group>"; };
 		21F703941B66D20100C2E26B /* EndScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EndScreen.storyboard; sourceTree = "<group>"; };
-		CA03A7701B66DEDB0019B2D4 /* ZleepManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZleepManager.h; sourceTree = "<group>"; };
-		CA03A7711B66DEDB0019B2D4 /* ZleepManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZleepManager.m; sourceTree = "<group>"; };
-		CA03A7731B66E5CF0019B2D4 /* ZleepManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZleepManagerDelegate.h; sourceTree = "<group>"; };
 		3D5271FC1B66F52E00848882 /* inZleepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inZleepViewController.h; sourceTree = "<group>"; };
 		3D5271FD1B66F52E00848882 /* inZleepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = inZleepViewController.m; sourceTree = "<group>"; };
 		3D5271FF1B684B7900848882 /* turtle_96x104.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turtle_96x104.png; sourceTree = "<group>"; };
+		CA03A7701B66DEDB0019B2D4 /* ZleepManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZleepManager.h; sourceTree = "<group>"; };
+		CA03A7711B66DEDB0019B2D4 /* ZleepManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZleepManager.m; sourceTree = "<group>"; };
+		CA03A7731B66E5CF0019B2D4 /* ZleepManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZleepManagerDelegate.h; sourceTree = "<group>"; };
+		D470E1361B685FD1001BB9E7 /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupViewController.h; sourceTree = "<group>"; };
+		D470E1371B685FD1001BB9E7 /* SetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupViewController.m; sourceTree = "<group>"; };
 		D4E032D51B66DA8900380649 /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,10 +96,10 @@
 		21F703691B66D16B00C2E26B /* Zleep */ = {
 			isa = PBXGroup;
 			children = (
+				D470E1361B685FD1001BB9E7 /* SetupViewController.h */,
+				D470E1371B685FD1001BB9E7 /* SetupViewController.m */,
 				21F7036E1B66D16B00C2E26B /* AppDelegate.h */,
 				21F7036F1B66D16B00C2E26B /* AppDelegate.m */,
-				21F703711B66D16B00C2E26B /* ViewController.h */,
-				21F703721B66D16B00C2E26B /* ViewController.m */,
 				21F703771B66D16B00C2E26B /* Images.xcassets */,
 				21F703791B66D16B00C2E26B /* LaunchScreen.xib */,
 				21F7036A1B66D16B00C2E26B /* Supporting Files */,
@@ -249,8 +249,8 @@
 			files = (
 				CA03A7721B66DEDB0019B2D4 /* ZleepManager.m in Sources */,
 				3D5271FE1B66F52E00848882 /* inZleepViewController.m in Sources */,
-				21F703731B66D16B00C2E26B /* ViewController.m in Sources */,
 				21F703701B66D16B00C2E26B /* AppDelegate.m in Sources */,
+				D470E1381B685FD1001BB9E7 /* SetupViewController.m in Sources */,
 				21F7036D1B66D16B00C2E26B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

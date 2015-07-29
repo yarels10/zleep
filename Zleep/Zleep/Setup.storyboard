@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Setup View Controller-->
         <scene sceneID="iDX-8H-JY0">
             <objects>
-                <viewController id="9yR-xi-K14" sceneMemberID="viewController">
+                <viewController id="9yR-xi-K14" customClass="SetupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lpQ-JY-nfg"/>
                         <viewControllerLayoutGuide type="bottom" id="hh0-XY-kYd"/>
@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="lsv-sy-MPu">
-                                <rect key="frame" x="140" y="401" width="320" height="162"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="lsv-sy-MPu">
+                                <rect key="frame" x="140" y="409" width="320" height="162"/>
                                 <color key="backgroundColor" red="0.1431775029" green="1" blue="0.12997611789999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Eu9-qV-Opp"/>
@@ -27,14 +27,8 @@
                                     <!--2015-07-27 21:18:36 +0000-->
                                 </date>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarm Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhY-ma-Cy7">
-                                <rect key="frame" x="255.5" y="385.5" width="89" height="20.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="fZD-9K-LPx">
-                                <rect key="frame" x="140" y="164.5" width="320" height="162"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="fZD-9K-LPx">
+                                <rect key="frame" x="140" y="180" width="320" height="162"/>
                                 <color key="backgroundColor" red="0.1431775029" green="1" blue="0.12997611789999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="p8h-Bm-d0F"/>
@@ -43,8 +37,8 @@
                                     <!--2015-07-27 21:18:36 +0000-->
                                 </date>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5Z-5c-2Nq">
-                                <rect key="frame" x="259.5" y="149" width="81.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Start Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5Z-5c-2Nq">
+                                <rect key="frame" x="259" y="164" width="82" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -59,19 +53,19 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7e-hS-tA2">
-                                <rect key="frame" x="16" y="72" width="24.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <rect key="frame" x="39" y="100" width="40" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Zleep" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9T-v4-vgD">
-                                <rect key="frame" x="501" y="72" width="83" height="20.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <rect key="frame" x="435" y="100" width="136" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 Hours" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ca-eD-JHd">
-                                <rect key="frame" x="523.5" y="99.5" width="60.5" height="20.5"/>
+                                <rect key="frame" x="473" y="141" width="61" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -82,10 +76,19 @@
                                 <state key="normal" title="Start Zleep">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonHit:" destination="9yR-xi-K14" eventType="touchUpInside" id="tA9-ac-jg7"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="409" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeW-df-xUY">
-                                <rect key="frame" x="16" y="94" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="409" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeW-df-xUY">
+                                <rect key="frame" x="39" y="136" width="29" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarm Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhY-ma-Cy7">
+                                <rect key="frame" x="256" y="401" width="89" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -97,33 +100,66 @@
                             <constraint firstAttribute="centerX" secondItem="lsv-sy-MPu" secondAttribute="centerX" id="6zU-gG-s6r"/>
                             <constraint firstItem="D7e-hS-tA2" firstAttribute="top" secondItem="X52-S0-Fxf" secondAttribute="bottom" id="ChC-va-lnA"/>
                             <constraint firstItem="X52-S0-Fxf" firstAttribute="leading" secondItem="jSL-is-CyT" secondAttribute="leading" id="DW5-Q9-ZWC"/>
+                            <constraint firstItem="X9T-v4-vgD" firstAttribute="top" secondItem="X52-S0-Fxf" secondAttribute="bottom" constant="34" id="E14-VO-7YX"/>
                             <constraint firstItem="qeW-df-xUY" firstAttribute="leading" secondItem="jSL-is-CyT" secondAttribute="leadingMargin" id="GFC-di-Ob2"/>
                             <constraint firstAttribute="centerX" secondItem="b5Z-5c-2Nq" secondAttribute="centerX" id="GSG-el-vcl"/>
+                            <constraint firstItem="dhY-ma-Cy7" firstAttribute="top" secondItem="fZD-9K-LPx" secondAttribute="bottom" constant="24" id="Gys-5B-83g"/>
+                            <constraint firstItem="D7e-hS-tA2" firstAttribute="leading" secondItem="jSL-is-CyT" secondAttribute="leadingMargin" constant="23" id="HGI-tm-gYN"/>
                             <constraint firstItem="9ca-eD-JHd" firstAttribute="top" secondItem="X9T-v4-vgD" secondAttribute="bottom" constant="7" id="KDo-uj-jV2"/>
                             <constraint firstItem="X9T-v4-vgD" firstAttribute="top" secondItem="X52-S0-Fxf" secondAttribute="bottom" id="Lws-SS-sf5"/>
+                            <constraint firstItem="X9T-v4-vgD" firstAttribute="top" secondItem="X52-S0-Fxf" secondAttribute="bottom" constant="28" id="O4y-Fo-Jvc"/>
+                            <constraint firstItem="D7e-hS-tA2" firstAttribute="top" secondItem="X52-S0-Fxf" secondAttribute="bottom" constant="28" id="O6r-vo-g2w"/>
                             <constraint firstItem="hh0-XY-kYd" firstAttribute="top" secondItem="4R0-Bd-iCd" secondAttribute="bottom" constant="8" symbolic="YES" id="OMn-11-uBH"/>
                             <constraint firstAttribute="centerX" secondItem="4R0-Bd-iCd" secondAttribute="centerX" id="OO6-NQ-6li"/>
+                            <constraint firstItem="9ca-eD-JHd" firstAttribute="top" secondItem="X9T-v4-vgD" secondAttribute="bottom" constant="8" id="PbE-bg-CHU"/>
                             <constraint firstItem="X52-S0-Fxf" firstAttribute="top" secondItem="lpQ-JY-nfg" secondAttribute="bottom" constant="8" id="Skj-h3-3lu"/>
                             <constraint firstItem="dhY-ma-Cy7" firstAttribute="top" secondItem="fZD-9K-LPx" secondAttribute="bottom" constant="100" id="Xib-25-f3c"/>
                             <constraint firstItem="qeW-df-xUY" firstAttribute="top" secondItem="D7e-hS-tA2" secondAttribute="bottom" constant="1.5" id="Zcr-vs-XL3"/>
                             <constraint firstItem="D7e-hS-tA2" firstAttribute="leading" secondItem="jSL-is-CyT" secondAttribute="leadingMargin" id="cVd-LF-U9X"/>
+                            <constraint firstItem="lsv-sy-MPu" firstAttribute="top" secondItem="dhY-ma-Cy7" secondAttribute="bottom" constant="19" id="cqX-tG-rCi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9ca-eD-JHd" secondAttribute="trailing" constant="50" id="e8x-IX-Bha"/>
                             <constraint firstItem="X52-S0-Fxf" firstAttribute="top" secondItem="jSL-is-CyT" secondAttribute="top" id="exm-gL-ZOp"/>
                             <constraint firstItem="4R0-Bd-iCd" firstAttribute="centerX" secondItem="lsv-sy-MPu" secondAttribute="centerX" id="f19-dr-IoD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9ca-eD-JHd" secondAttribute="trailing" constant="13" id="gfu-bU-R9d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X9T-v4-vgD" secondAttribute="trailing" constant="13" id="hOr-RV-V1W"/>
+                            <constraint firstItem="4R0-Bd-iCd" firstAttribute="top" secondItem="lsv-sy-MPu" secondAttribute="bottom" constant="40" id="kgq-xz-KkI"/>
                             <constraint firstItem="lsv-sy-MPu" firstAttribute="top" secondItem="dhY-ma-Cy7" secondAttribute="bottom" constant="36" id="o0z-q9-2Yc"/>
                             <constraint firstAttribute="centerX" secondItem="X52-S0-Fxf" secondAttribute="centerX" id="pDH-n5-GEl"/>
                             <constraint firstItem="fZD-9K-LPx" firstAttribute="top" secondItem="b5Z-5c-2Nq" secondAttribute="bottom" constant="36" id="ptA-tj-QjN"/>
                             <constraint firstItem="4R0-Bd-iCd" firstAttribute="top" secondItem="lsv-sy-MPu" secondAttribute="bottom" constant="40" id="sE7-LS-Rlh"/>
+                            <constraint firstItem="qeW-df-xUY" firstAttribute="leading" secondItem="jSL-is-CyT" secondAttribute="leadingMargin" constant="23" id="soS-Hl-yWs"/>
                             <constraint firstItem="9ca-eD-JHd" firstAttribute="trailing" secondItem="jSL-is-CyT" secondAttribute="trailingMargin" id="t9c-km-vY0"/>
+                            <constraint firstItem="4R0-Bd-iCd" firstAttribute="top" secondItem="lsv-sy-MPu" secondAttribute="bottom" constant="32" id="tlY-Yf-fmc"/>
                             <constraint firstItem="X9T-v4-vgD" firstAttribute="trailing" secondItem="jSL-is-CyT" secondAttribute="trailingMargin" id="w0S-44-JNO"/>
+                            <constraint firstItem="lsv-sy-MPu" firstAttribute="top" secondItem="dhY-ma-Cy7" secondAttribute="bottom" constant="28" id="wgK-42-JjK"/>
                             <constraint firstAttribute="centerX" secondItem="fZD-9K-LPx" secondAttribute="centerX" id="xBk-PO-stI"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="exm-gL-ZOp"/>
+                                <exclude reference="ChC-va-lnA"/>
+                                <exclude reference="cVd-LF-U9X"/>
+                                <exclude reference="GFC-di-Ob2"/>
+                                <exclude reference="cqX-tG-rCi"/>
+                                <exclude reference="o0z-q9-2Yc"/>
+                                <exclude reference="E14-VO-7YX"/>
+                                <exclude reference="Lws-SS-sf5"/>
+                                <exclude reference="w0S-44-JNO"/>
                                 <exclude reference="5mf-fv-iag"/>
+                                <exclude reference="Gys-5B-83g"/>
+                                <exclude reference="PbE-bg-CHU"/>
+                                <exclude reference="gfu-bU-R9d"/>
+                                <exclude reference="t9c-km-vY0"/>
+                                <exclude reference="kgq-xz-KkI"/>
+                                <exclude reference="sE7-LS-Rlh"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="endTime" destination="lsv-sy-MPu" id="cBP-nw-Feh"/>
+                        <outlet property="startTime" destination="fZD-9K-LPx" id="TXf-KH-Jcl"/>
+                        <outlet property="totalZs" destination="qeW-df-xUY" id="GLp-iD-hnB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VSE-W5-oJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
