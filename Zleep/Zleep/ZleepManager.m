@@ -43,7 +43,7 @@
 {
     NSLog(@"User left the app.");
     
-    if ([self.delegate respondsToSelector:@selector(userLeftApp)])
+    if ([self.delegate respondsToSelector:@selector(userLeftApp)]) // checks if the delegate has a specific method
     {
         [self nagUserForLeaving];
         NSLog(@"Informing the delegate that we've left the app.");

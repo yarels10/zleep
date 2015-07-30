@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZleepManager.h"
+#import "ZleepManagerDelegate.h"
 
-@interface inZleepViewController : UIViewController
+@interface inZleepViewController : UIViewController <ZleepManagerDelegate>
 
 @property NSDate *startDate;
 @property NSDate *endDate;
