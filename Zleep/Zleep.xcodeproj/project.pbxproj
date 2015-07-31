@@ -17,8 +17,6 @@
 		21F703951B66D20100C2E26B /* EndScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F703941B66D20100C2E26B /* EndScreen.storyboard */; };
 		3D5271FE1B66F52E00848882 /* inZleepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5271FD1B66F52E00848882 /* inZleepViewController.m */; };
 		3D5272001B684B7900848882 /* turtle_96x104.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5271FF1B684B7900848882 /* turtle_96x104.png */; };
-		3D8A35CC1B69A1EF0074090F /* LaunchImage.launchimage in Resources */ = {isa = PBXBuildFile; fileRef = 3D8A35CA1B69A1EF0074090F /* LaunchImage.launchimage */; };
-		3D8A35CD1B69A1EF0074090F /* IMG_2292.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 3D8A35CB1B69A1EF0074090F /* IMG_2292.imageset */; };
 		3D8A35D11B69A3380074090F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8A35D01B69A3380074090F /* Images.xcassets */; };
 		CA03A7721B66DEDB0019B2D4 /* ZleepManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA03A7711B66DEDB0019B2D4 /* ZleepManager.m */; };
 		D470E1381B685FD1001BB9E7 /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D470E1371B685FD1001BB9E7 /* SetupViewController.m */; };
@@ -53,8 +51,6 @@
 		3D5271FC1B66F52E00848882 /* inZleepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inZleepViewController.h; sourceTree = "<group>"; };
 		3D5271FD1B66F52E00848882 /* inZleepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = inZleepViewController.m; sourceTree = "<group>"; };
 		3D5271FF1B684B7900848882 /* turtle_96x104.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turtle_96x104.png; sourceTree = "<group>"; };
-		3D8A35CA1B69A1EF0074090F /* LaunchImage.launchimage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LaunchImage.launchimage; path = Images.xcassets/LaunchImage.launchimage; sourceTree = "<group>"; };
-		3D8A35CB1B69A1EF0074090F /* IMG_2292.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = IMG_2292.imageset; path = Images.xcassets/IMG_2292.imageset; sourceTree = "<group>"; };
 		3D8A35D01B69A3380074090F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CA03A7701B66DEDB0019B2D4 /* ZleepManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZleepManager.h; sourceTree = "<group>"; };
 		CA03A7711B66DEDB0019B2D4 /* ZleepManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZleepManager.m; sourceTree = "<group>"; };
@@ -108,8 +104,6 @@
 				D470E1371B685FD1001BB9E7 /* SetupViewController.m */,
 				21F7036E1B66D16B00C2E26B /* AppDelegate.h */,
 				21F7036F1B66D16B00C2E26B /* AppDelegate.m */,
-				3D8A35CA1B69A1EF0074090F /* LaunchImage.launchimage */,
-				3D8A35CB1B69A1EF0074090F /* IMG_2292.imageset */,
 				21F703791B66D16B00C2E26B /* LaunchScreen.xib */,
 				21F7036A1B66D16B00C2E26B /* Supporting Files */,
 				21F703901B66D1D900C2E26B /* Setup.storyboard */,
@@ -235,11 +229,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				21F703911B66D1D900C2E26B /* Setup.storyboard in Resources */,
-				3D8A35CC1B69A1EF0074090F /* LaunchImage.launchimage in Resources */,
 				21F703951B66D20100C2E26B /* EndScreen.storyboard in Resources */,
 				D4E032D61B66DA8900380649 /* BG.png in Resources */,
 				3D8A35D11B69A3380074090F /* Images.xcassets in Resources */,
-				3D8A35CD1B69A1EF0074090F /* IMG_2292.imageset in Resources */,
 				21F7037B1B66D16B00C2E26B /* LaunchScreen.xib in Resources */,
 				21F703931B66D1F000C2E26B /* inZleep.storyboard in Resources */,
 				3D5272001B684B7900848882 /* turtle_96x104.png in Resources */,

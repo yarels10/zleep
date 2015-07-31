@@ -10,6 +10,10 @@
 
 @interface EndScreenViewController : UIViewController
 
--(IBAction)unwind:(UIStoryboardSegue*)segue;
+@property NSNumber *totalPoints;
+@property NSNumber *pointsLost;
+@property NSNumber *lengthOfZleep;
+@property NSNumber *timeOutOfApp;
+
 
 @end
