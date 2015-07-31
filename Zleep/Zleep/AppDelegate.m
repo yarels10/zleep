@@ -20,7 +20,8 @@
     // Override point for customization after application launch.
     
     [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
-
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
     
     return YES;
 }

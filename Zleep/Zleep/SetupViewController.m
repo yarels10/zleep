@@ -39,7 +39,7 @@
     
     inZleepViewController *destination = [[UIStoryboard storyboardWithName:@"inZleep" bundle:nil] instantiateInitialViewController];
     
-    destination.startDate = NSDate.date;
+    destination.startDate = self.startTime.date;
     
     
     
