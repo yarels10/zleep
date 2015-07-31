@@ -15,6 +15,21 @@
 		21F703911B66D1D900C2E26B /* Setup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F703901B66D1D900C2E26B /* Setup.storyboard */; };
 		21F703931B66D1F000C2E26B /* inZleep.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F703921B66D1F000C2E26B /* inZleep.storyboard */; };
 		21F703951B66D20100C2E26B /* EndScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F703941B66D20100C2E26B /* EndScreen.storyboard */; };
+		3C2C7A1F1B6AC5AF00F296B5 /* Rewards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C7A1E1B6AC5AF00F296B5 /* Rewards.storyboard */; };
+		3C2C7A251B6AD42000F296B5 /* RewardsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C7A241B6AD42000F296B5 /* RewardsViewCell.m */; };
+		3C2C7A281B6AFCF400F296B5 /* RewardsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C7A271B6AFCF400F296B5 /* RewardsCollectionViewController.m */; };
+		3CA4A30B1B6B0CA200477F53 /* dog-biscuits.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CA4A3031B6B0CA200477F53 /* dog-biscuits.jpg */; };
+		3CA4A30C1B6B0CA200477F53 /* dog-house.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CA4A3041B6B0CA200477F53 /* dog-house.jpg */; };
+		3CA4A30D1B6B0CA200477F53 /* hand-clothes-brush.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CA4A3051B6B0CA200477F53 /* hand-clothes-brush.jpg */; };
+		3CA4A30E1B6B0CA200477F53 /* naakt-hond.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CA4A3061B6B0CA200477F53 /* naakt-hond.jpg */; };
+		3CA4A30F1B6B0CA200477F53 /* painting-of-labrador-with-toy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CA4A3071B6B0CA200477F53 /* painting-of-labrador-with-toy.jpg */; };
+		3CA4A3101B6B0CA200477F53 /* parrot-toy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CA4A3081B6B0CA200477F53 /* parrot-toy.jpg */; };
+		3CA4A3111B6B0CA200477F53 /* pink-dog-toy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CA4A3091B6B0CA200477F53 /* pink-dog-toy.jpg */; };
+		3CA4A3121B6B0CA200477F53 /* squeeze-toy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CA4A30A1B6B0CA200477F53 /* squeeze-toy.jpg */; };
+		3CA4A3141B6B0CB900477F53 /* bags-of-colored-sugar-snacks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CA4A3131B6B0CB900477F53 /* bags-of-colored-sugar-snacks.jpg */; };
+		3CA4A3171B6BBBF000477F53 /* RewardsItemData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4A3161B6BBBF000477F53 /* RewardsItemData.m */; };
+		3CA4A31A1B6C141300477F53 /* RewardsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4A3191B6C141300477F53 /* RewardsHeaderView.m */; };
+		3CEF32B51B6C1FB300995446 /* 296-1230341005ghUn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF32B41B6C1FB300995446 /* 296-1230341005ghUn.jpg */; };
 		3D5271FE1B66F52E00848882 /* inZleepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5271FD1B66F52E00848882 /* inZleepViewController.m */; };
 		3D5272001B684B7900848882 /* turtle_96x104.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5271FF1B684B7900848882 /* turtle_96x104.png */; };
 		3D8A35D11B69A3380074090F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8A35D01B69A3380074090F /* Images.xcassets */; };
@@ -48,6 +63,25 @@
 		21F703901B66D1D900C2E26B /* Setup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setup.storyboard; sourceTree = "<group>"; };
 		21F703921B66D1F000C2E26B /* inZleep.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = inZleep.storyboard; sourceTree = "<group>"; };
 		21F703941B66D20100C2E26B /* EndScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EndScreen.storyboard; sourceTree = "<group>"; };
+		3C2C7A1E1B6AC5AF00F296B5 /* Rewards.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Rewards.storyboard; sourceTree = "<group>"; };
+		3C2C7A231B6AD42000F296B5 /* RewardsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardsViewCell.h; sourceTree = "<group>"; };
+		3C2C7A241B6AD42000F296B5 /* RewardsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardsViewCell.m; sourceTree = "<group>"; };
+		3C2C7A261B6AFCF400F296B5 /* RewardsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardsCollectionViewController.h; sourceTree = "<group>"; };
+		3C2C7A271B6AFCF400F296B5 /* RewardsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardsCollectionViewController.m; sourceTree = "<group>"; };
+		3CA4A3031B6B0CA200477F53 /* dog-biscuits.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dog-biscuits.jpg"; sourceTree = "<group>"; };
+		3CA4A3041B6B0CA200477F53 /* dog-house.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dog-house.jpg"; sourceTree = "<group>"; };
+		3CA4A3051B6B0CA200477F53 /* hand-clothes-brush.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hand-clothes-brush.jpg"; sourceTree = "<group>"; };
+		3CA4A3061B6B0CA200477F53 /* naakt-hond.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "naakt-hond.jpg"; sourceTree = "<group>"; };
+		3CA4A3071B6B0CA200477F53 /* painting-of-labrador-with-toy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "painting-of-labrador-with-toy.jpg"; sourceTree = "<group>"; };
+		3CA4A3081B6B0CA200477F53 /* parrot-toy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "parrot-toy.jpg"; sourceTree = "<group>"; };
+		3CA4A3091B6B0CA200477F53 /* pink-dog-toy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pink-dog-toy.jpg"; sourceTree = "<group>"; };
+		3CA4A30A1B6B0CA200477F53 /* squeeze-toy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "squeeze-toy.jpg"; sourceTree = "<group>"; };
+		3CA4A3131B6B0CB900477F53 /* bags-of-colored-sugar-snacks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bags-of-colored-sugar-snacks.jpg"; sourceTree = "<group>"; };
+		3CA4A3151B6BBBF000477F53 /* RewardsItemData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardsItemData.h; sourceTree = "<group>"; };
+		3CA4A3161B6BBBF000477F53 /* RewardsItemData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardsItemData.m; sourceTree = "<group>"; };
+		3CA4A3181B6C141300477F53 /* RewardsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardsHeaderView.h; sourceTree = "<group>"; };
+		3CA4A3191B6C141300477F53 /* RewardsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardsHeaderView.m; sourceTree = "<group>"; };
+		3CEF32B41B6C1FB300995446 /* 296-1230341005ghUn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "296-1230341005ghUn.jpg"; sourceTree = "<group>"; };
 		3D5271FC1B66F52E00848882 /* inZleepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inZleepViewController.h; sourceTree = "<group>"; };
 		3D5271FD1B66F52E00848882 /* inZleepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = inZleepViewController.m; sourceTree = "<group>"; };
 		3D5271FF1B684B7900848882 /* turtle_96x104.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turtle_96x104.png; sourceTree = "<group>"; };
@@ -99,6 +133,7 @@
 		21F703691B66D16B00C2E26B /* Zleep */ = {
 			isa = PBXGroup;
 			children = (
+				3CA4A2FE1B6B09FA00477F53 /* RewardImages */,
 				3D8A35D01B69A3380074090F /* Images.xcassets */,
 				D470E1361B685FD1001BB9E7 /* SetupViewController.h */,
 				D470E1371B685FD1001BB9E7 /* SetupViewController.m */,
@@ -116,6 +151,15 @@
 				3D5271FD1B66F52E00848882 /* inZleepViewController.m */,
 				2189E1871B681FBC0071BBE5 /* EndScreenViewController.h */,
 				2189E1881B681FBC0071BBE5 /* EndScreenViewController.m */,
+				3C2C7A1E1B6AC5AF00F296B5 /* Rewards.storyboard */,
+				3C2C7A261B6AFCF400F296B5 /* RewardsCollectionViewController.h */,
+				3C2C7A271B6AFCF400F296B5 /* RewardsCollectionViewController.m */,
+				3C2C7A231B6AD42000F296B5 /* RewardsViewCell.h */,
+				3CA4A3181B6C141300477F53 /* RewardsHeaderView.h */,
+				3CA4A3191B6C141300477F53 /* RewardsHeaderView.m */,
+				3C2C7A241B6AD42000F296B5 /* RewardsViewCell.m */,
+				3CA4A3151B6BBBF000477F53 /* RewardsItemData.h */,
+				3CA4A3161B6BBBF000477F53 /* RewardsItemData.m */,
 			);
 			path = Zleep;
 			sourceTree = "<group>";
@@ -146,6 +190,23 @@
 				21F703851B66D16B00C2E26B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CA4A2FE1B6B09FA00477F53 /* RewardImages */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF32B41B6C1FB300995446 /* 296-1230341005ghUn.jpg */,
+				3CA4A3131B6B0CB900477F53 /* bags-of-colored-sugar-snacks.jpg */,
+				3CA4A3031B6B0CA200477F53 /* dog-biscuits.jpg */,
+				3CA4A3041B6B0CA200477F53 /* dog-house.jpg */,
+				3CA4A3051B6B0CA200477F53 /* hand-clothes-brush.jpg */,
+				3CA4A3061B6B0CA200477F53 /* naakt-hond.jpg */,
+				3CA4A3071B6B0CA200477F53 /* painting-of-labrador-with-toy.jpg */,
+				3CA4A3081B6B0CA200477F53 /* parrot-toy.jpg */,
+				3CA4A3091B6B0CA200477F53 /* pink-dog-toy.jpg */,
+				3CA4A30A1B6B0CA200477F53 /* squeeze-toy.jpg */,
+			);
+			name = RewardImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,12 +290,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				21F703911B66D1D900C2E26B /* Setup.storyboard in Resources */,
+				3D8A35CC1B69A1EF0074090F /* LaunchImage.launchimage in Resources */,
+				3CA4A30E1B6B0CA200477F53 /* naakt-hond.jpg in Resources */,
 				21F703951B66D20100C2E26B /* EndScreen.storyboard in Resources */,
+				3CA4A30B1B6B0CA200477F53 /* dog-biscuits.jpg in Resources */,
 				D4E032D61B66DA8900380649 /* BG.png in Resources */,
+				3CEF32B51B6C1FB300995446 /* 296-1230341005ghUn.jpg in Resources */,
 				3D8A35D11B69A3380074090F /* Images.xcassets in Resources */,
+				3CA4A30F1B6B0CA200477F53 /* painting-of-labrador-with-toy.jpg in Resources */,
+				3C2C7A1F1B6AC5AF00F296B5 /* Rewards.storyboard in Resources */,
+				3CA4A3111B6B0CA200477F53 /* pink-dog-toy.jpg in Resources */,
+				3CA4A3141B6B0CB900477F53 /* bags-of-colored-sugar-snacks.jpg in Resources */,
+				3D8A35CD1B69A1EF0074090F /* IMG_2292.imageset in Resources */,
+				3CA4A30D1B6B0CA200477F53 /* hand-clothes-brush.jpg in Resources */,
 				21F7037B1B66D16B00C2E26B /* LaunchScreen.xib in Resources */,
+				3CA4A3121B6B0CA200477F53 /* squeeze-toy.jpg in Resources */,
 				21F703931B66D1F000C2E26B /* inZleep.storyboard in Resources */,
 				3D5272001B684B7900848882 /* turtle_96x104.png in Resources */,
+				3CA4A3101B6B0CA200477F53 /* parrot-toy.jpg in Resources */,
+				3CA4A30C1B6B0CA200477F53 /* dog-house.jpg in Resources */,
 				21F7037B1B66D16B00C2E26B /* LaunchScreen.xib in Resources */,
 				21F703931B66D1F000C2E26B /* inZleep.storyboard in Resources */,
 			);
@@ -257,7 +331,11 @@
 				CA03A7721B66DEDB0019B2D4 /* ZleepManager.m in Sources */,
 				3D5271FE1B66F52E00848882 /* inZleepViewController.m in Sources */,
 				21F703701B66D16B00C2E26B /* AppDelegate.m in Sources */,
+				3CA4A3171B6BBBF000477F53 /* RewardsItemData.m in Sources */,
+				3CA4A31A1B6C141300477F53 /* RewardsHeaderView.m in Sources */,
 				D470E1381B685FD1001BB9E7 /* SetupViewController.m in Sources */,
+				3C2C7A251B6AD42000F296B5 /* RewardsViewCell.m in Sources */,
+				3C2C7A281B6AFCF400F296B5 /* RewardsCollectionViewController.m in Sources */,
 				2189E1891B681FBC0071BBE5 /* EndScreenViewController.m in Sources */,
 				21F7036D1B66D16B00C2E26B /* main.m in Sources */,
 			);
