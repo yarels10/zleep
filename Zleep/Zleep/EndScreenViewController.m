@@ -7,6 +7,7 @@
 //
 
 #import "EndScreenViewController.h"
+#import "ZleepManager.h"
 
 @interface EndScreenViewController ()
 
@@ -16,13 +17,29 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *zTotal;
 @property (weak, nonatomic) IBOutlet UILabel *leftApp;
-@property (weak, nonatomic) IBOutlet UILabel *pointsLost;
+@property (weak, nonatomic) IBOutlet UILabel *pointsLostLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *pointsFromZleep;
 
 @end
 
+
+
 @implementation EndScreenViewController
+
+
+//Configuring collecting Z's and what happens when "collect your z's!" button is tapped
+
+- (IBAction)collectZButtonTapped:(id)sender {
+}
+//
+////-(void) alarm
+////{
+//    EndScreenViewController *destination = [[UIStoryboard storyboardWithName:@"Zleep Manager" bundle:nil] instantiateInitialViewController];
+//    
+//    
+//    [self presentViewController:destination animated:YES completion:nil];
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,31 +47,34 @@
     
     self.collectZ.backgroundColor=[UIColor whiteColor];
     self.collectZ.layer.cornerRadius = 10;
+    
+    
+    //Will display the total of number of earned z's
+     self.zTotal.text =[@([[ZleepManager sharedInstance] totalZleepPoints]) stringValue];
+    
+    //wil indicate how long the user has left the app for
+   // self.leftApp.text=
+    
+    
+    //will indicate how may points were lost due to leaving the app
+    
+    //self.pointsLost.text=[@([[ZleepManager sharedInstance] pointsLost]) stringValue];
+    
+      // self.pointsLost.text = [NSString stringWithFormat:@"%ld", self.question.pointValue];
+    
+    //will indicate the total of z's that were collected that night after subtracting lost amount of points as well
+        //self.pointsLostFromZleep.text
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
- 
-*/
-
-//-(IBAction)buttonTapped(UIStoryboardSegue*)
     
     
-    
-//}
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
 
 @end

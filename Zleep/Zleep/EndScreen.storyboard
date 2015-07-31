@@ -14,11 +14,11 @@
                         <viewControllerLayoutGuide type="top" id="FOz-nE-OSj"/>
                         <viewControllerLayoutGuide type="bottom" id="rhI-fi-YAh"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9zL-aN-ftd">
+                    <view key="view" contentMode="scaleToFill" id="9zL-aN-ftd" customClass="EndScreen">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Left the app for: 1 hour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="law-WK-5fv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left the app for: 1 hour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="law-WK-5fv">
                                 <rect key="frame" x="78" y="252" width="177" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Ixs-U0-31U"/>
@@ -42,17 +42,6 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UB4-Zd-qCP">
-                                <rect key="frame" x="58" y="412" width="186" height="44"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <state key="normal" title="Collect Your Z's!">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="193" y="713" width="174" height="46"/>
-                                </variation>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EXAMPLE1" translatesAutoresizingMaskIntoConstraints="NO" id="JwM-EY-ob3">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
@@ -89,7 +78,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Points lost from this Zleep: -10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sK-hZ-hkM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points lost from this Zleep: -10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sK-hZ-hkM">
                                 <rect key="frame" x="108" y="223" width="117" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="85" id="Gnk-uE-Bfi"/>
@@ -116,7 +105,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Total Z's: 48 Z's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cL-TE-B6C">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Z's: 48 Z's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cL-TE-B6C">
                                 <rect key="frame" x="85" y="281" width="163" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="163" id="UtM-OH-Ay0"/>
@@ -174,12 +163,20 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="apt-xC-GAY">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="442" y="103" width="158" height="107"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UB4-Zd-qCP">
+                                <rect key="frame" x="58" y="412" width="186" height="44"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Collect Your Z's!">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="193" y="746" width="174" height="46"/>
                                 </variation>
-                            </imageView>
+                                <connections>
+                                    <action selector="collectZButtonTapped:" destination="5ut-c0-TNZ" eventType="touchUpInside" id="Sts-GV-1WN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.01258680555555558" green="0.011738161333725324" blue="0.00089302591844770817" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -218,7 +215,6 @@
                                 <exclude reference="y9B-UM-Dz8"/>
                                 <exclude reference="POA-Rw-lrV"/>
                                 <exclude reference="wwJ-I3-fJw"/>
-                                <exclude reference="apt-xC-GAY"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="2OM-Ma-vsa"/>
@@ -256,7 +252,6 @@
                                 <include reference="y9B-UM-Dz8"/>
                                 <include reference="POA-Rw-lrV"/>
                                 <include reference="wwJ-I3-fJw"/>
-                                <include reference="apt-xC-GAY"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="2OM-Ma-vsa"/>
@@ -294,7 +289,7 @@
                         <outlet property="collectZ" destination="UB4-Zd-qCP" id="DrH-0E-oad"/>
                         <outlet property="leftApp" destination="law-WK-5fv" id="wmb-He-5xb"/>
                         <outlet property="pointsFromZleep" destination="fQa-h0-TDG" id="dcM-KX-XnF"/>
-                        <outlet property="pointsLost" destination="6sK-hZ-hkM" id="sdp-Jf-SFT"/>
+                        <outlet property="pointsLostLabel" destination="6sK-hZ-hkM" id="99z-cZ-rJ5"/>
                         <outlet property="zTotal" destination="6cL-TE-B6C" id="PPI-tg-T0E"/>
                     </connections>
                 </viewController>
@@ -302,46 +297,9 @@
             </objects>
             <point key="canvasLocation" x="2261" y="-86.25"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="1hX-jC-9Vc">
-            <objects>
-                <viewController id="7q1-zm-Y4k" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Q2a-8q-rTp"/>
-                        <viewControllerLayoutGuide type="bottom" id="OMX-mQ-kCF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JOf-Zg-xig">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GxS-Cg-6Vi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3157" y="-66.75"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="H0a-01-LRP">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h1i-GJ-yF1" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fiZ-pU-nLv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="5ut-c0-TNZ" kind="relationship" relationship="rootViewController" id="VTX-Wx-oLU"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hf4-va-iE7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2839" y="-795.75"/>
-        </scene>
     </scenes>
     <resources>
         <image name="EXAMPLE1" width="1080" height="1440"/>
         <image name="FullSizeRender" width="640" height="360"/>
-        <image name="star" width="250" height="188"/>
     </resources>
 </document>
