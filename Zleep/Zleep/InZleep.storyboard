@@ -20,6 +20,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarm Set For:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWz-Cm-p8l">
                                 <rect key="frame" x="180" y="549" width="110" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="turtle_96x104.png" translatesAutoresizingMaskIntoConstraints="NO" id="r7Y-Ha-IlR">
@@ -34,27 +35,22 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEp-zN-YQ9">
                                 <rect key="frame" x="307" y="549" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" blank" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nr-5m-m51">
                                 <rect key="frame" x="263" y="316" width="47" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="turtle_96x104.png" translatesAutoresizingMaskIntoConstraints="NO" id="2zK-T6-gFY">
-                                <rect key="frame" x="180" y="48" width="240" height="128"/>
-                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="KWz-Cm-p8l" secondAttribute="centerX" constant="65" id="1oA-Uf-aX8"/>
-                            <constraint firstAttribute="centerX" secondItem="2zK-T6-gFY" secondAttribute="centerX" id="9ZK-Ti-i1g"/>
                             <constraint firstItem="IEp-zN-YQ9" firstAttribute="leading" secondItem="KWz-Cm-p8l" secondAttribute="trailing" constant="8" id="AHd-Nu-LPH"/>
                             <constraint firstItem="KWz-Cm-p8l" firstAttribute="top" secondItem="r7Y-Ha-IlR" secondAttribute="bottom" constant="24" id="ExY-BV-oxD"/>
                             <constraint firstAttribute="centerX" secondItem="r7Y-Ha-IlR" secondAttribute="centerX" constant="12.5" id="FlH-Jx-B9j"/>
-                            <constraint firstItem="2zK-T6-gFY" firstAttribute="top" secondItem="MKX-81-bIt" secondAttribute="bottom" constant="33" id="Th5-RO-Tzq"/>
                             <constraint firstAttribute="centerY" secondItem="r7Y-Ha-IlR" secondAttribute="centerY" id="WDg-yW-j7X"/>
                             <constraint firstItem="2jF-bh-F4L" firstAttribute="top" secondItem="MKX-81-bIt" secondAttribute="bottom" id="dXf-h3-drR"/>
                             <constraint firstAttribute="centerX" secondItem="5nr-5m-m51" secondAttribute="centerX" constant="13" id="eME-Tx-HwR"/>
