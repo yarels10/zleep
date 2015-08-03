@@ -21,7 +21,7 @@
                                 <rect key="frame" x="-40" y="45" width="646" height="572"/>
                             </imageView>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="lsv-sy-MPu">
-                                <rect key="frame" x="140" y="380.5" width="320" height="162"/>
+                                <rect key="frame" x="140" y="381" width="320" height="162"/>
                                 <color key="backgroundColor" red="0.1431775029" green="1" blue="0.12997611789999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="U7s-xE-uAL"/>
@@ -42,7 +42,7 @@
                                 </date>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Start Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5Z-5c-2Nq">
-                                <rect key="frame" x="257.5" y="151.5" width="109.5" height="20.5"/>
+                                <rect key="frame" x="258" y="152" width="110" height="21"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -73,7 +73,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4R0-Bd-iCd">
-                                <rect key="frame" x="250" y="550.5" width="78" height="31.5"/>
+                                <rect key="frame" x="250" y="551" width="78" height="32"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                 <state key="normal" title="Start Zleep">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -84,7 +84,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarm Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhY-ma-Cy7">
-                                <rect key="frame" x="250" y="352" width="108" height="20.5"/>
+                                <rect key="frame" x="250" y="352" width="108" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20.5" id="ehc-7h-3OM"/>
                                     <constraint firstAttribute="width" constant="108" id="fXm-3O-j1e"/>
@@ -94,7 +94,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="409" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeW-df-xUY">
-                                <rect key="frame" x="13" y="135" width="44" height="20.5"/>
+                                <rect key="frame" x="13" y="135" width="44" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="ebv-Le-msM"/>
                                 </constraints>
@@ -165,7 +165,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="gea-Oh-J7a">
                         <barButtonItem key="leftBarButtonItem" title="Select pet" id="SMF-FC-3X6"/>
-                        <barButtonItem key="rightBarButtonItem" title="Store" id="zWI-D6-fUW"/>
+                        <barButtonItem key="rightBarButtonItem" title="Store" id="zWI-D6-fUW">
+                            <connections>
+                                <action selector="storeButtonHit:" destination="9yR-xi-K14" id="22r-iV-yUm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="endTime" destination="lsv-sy-MPu" id="cBP-nw-Feh"/>

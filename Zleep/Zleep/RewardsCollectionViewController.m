@@ -10,7 +10,7 @@
 #import "RewardsItemData.h"
 #import "RewardsViewCell.h"
 #import "RewardsHeaderView.h"
-
+#import "ZleepManager.h"
 @interface RewardsCollectionViewController ()
 @property NSNumber *userZs;
 @end
@@ -26,10 +26,17 @@ static NSString * const reuseIdentifier = @"Cell";
    /* [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];*/
     
     [self initializeRewardsData];
+    
+    ZleepManager *zm = [ZleepManager sharedInstance];
 }
 
 - (void) initializeRewardsData {
-    self.userZs = @800;
+    
+   
+   // [[ZleepManager sharedInstance] totalZleepPoints];
+    
+    self.userZs =     @([[ZleepManager sharedInstance] totalZleepPoints]);
+
     self.rewardsItems = [[NSMutableArray alloc] init];
     
     RewardsItemData *item1 = [[RewardsItemData alloc] init];
@@ -101,6 +108,17 @@ static NSString * const reuseIdentifier = @"Cell";
     item10.cost = @300;
     item10.isOwned = NO;
     [self.rewardsItems addObject: item10];
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    for (RewardsItemData *item in self.rewardsItems) {
+        if ([prefs boolForKey:[item title]]) {
+            item.isOwned=YES;
+            
+        }
+        
+        
+    }
+                               
 }
 
 - (void)didReceiveMemoryWarning {
@@ -167,6 +185,8 @@ static NSString * const reuseIdentifier = @"Cell";
     }
     
     self.userZs = [NSNumber numberWithFloat: [self.userZs floatValue] - [cellData.cost floatValue]];
+    [[ZleepManager sharedInstance ] setTotalZleepPoints:[self.userZs integerValue]];
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:cellData.title];
     cellData.isOwned = YES;
 
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"It's yours now" message: @"Congratulations! This item belongs to you now!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil, nil];
