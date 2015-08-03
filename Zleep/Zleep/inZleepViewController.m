@@ -86,10 +86,9 @@
     destination.timeOutOfApp = self.totalSecondsOutOfApp;
     destination.totalPoints = self.totalPoints;
     destination.pointsLost = self.pointsLost;
-    destination.lengthOfZleep = [NSNumber numberWithDouble:self.totalTime];
+    destination.pointsFromZleep = self.totalPoints;
    
-    
-    [self presentViewController:destination animated:YES completion:nil];
+    [self.navigationController pushViewController:destination animated:YES];
 }
 
 
@@ -115,6 +114,8 @@
     self.alarmSet.text = [dateFormatter stringFromDate: self.endDate];
     
     [ZleepManager sharedInstance].delegate = self;
+    
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 - (void)didReceiveMemoryWarning {

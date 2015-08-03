@@ -55,7 +55,7 @@
     destination.startDate = self.startTime.date;
     destination.endDate= self.endTime.date;
     
-    [self presentViewController:destination animated:YES completion:nil];
+    [self.navigationController pushViewController:destination animated:YES];
     
 }
 

@@ -81,10 +81,32 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Rewards" id="yQ6-eg-3cS">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="avl-gG-7cP"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back to setup" id="AaI-8u-W5x">
+                            <connections>
+                                <action selector="backTapped:" destination="k1r-Ht-lUa" id="8kU-PO-yF2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P41-Uh-Akl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2134" y="-240"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="x7n-5o-XHR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9ko-Uv-gwb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nrD-xi-Gal">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="k1r-Ht-lUa" kind="relationship" relationship="rootViewController" id="w02-j4-WtY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lf5-81-OFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1322" y="-240"/>
         </scene>

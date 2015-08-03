@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="top" id="FOz-nE-OSj"/>
                         <viewControllerLayoutGuide type="bottom" id="rhI-fi-YAh"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9zL-aN-ftd" customClass="EndScreen">
+                    <view key="view" contentMode="scaleToFill" id="9zL-aN-ftd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -174,11 +174,11 @@
                                     <rect key="frame" x="193" y="746" width="174" height="46"/>
                                 </variation>
                                 <connections>
-                                    <action selector="collectZButtonTapped:" destination="5ut-c0-TNZ" eventType="touchUpInside" id="Sts-GV-1WN"/>
+                                    <action selector="buttonTapped:" destination="5ut-c0-TNZ" eventType="touchUpInside" id="J4k-Ol-fFm"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.01258680555555558" green="0.011738161333725324" blue="0.00089302591844770817" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="POA-Rw-lrV" firstAttribute="top" secondItem="law-WK-5fv" secondAttribute="bottom" constant="-6" id="2OM-Ma-vsa"/>
@@ -288,14 +288,14 @@
                     <connections>
                         <outlet property="collectZ" destination="UB4-Zd-qCP" id="DrH-0E-oad"/>
                         <outlet property="leftApp" destination="law-WK-5fv" id="wmb-He-5xb"/>
-                        <outlet property="pointsFromZleep" destination="fQa-h0-TDG" id="dcM-KX-XnF"/>
+                        <outlet property="pointsFromZleepLabel" destination="fQa-h0-TDG" id="a6N-UW-jUW"/>
                         <outlet property="pointsLostLabel" destination="6sK-hZ-hkM" id="99z-cZ-rJ5"/>
                         <outlet property="zTotal" destination="6cL-TE-B6C" id="PPI-tg-T0E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l0L-Jc-BVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2261" y="-86.25"/>
+            <point key="canvasLocation" x="2216" y="-75"/>
         </scene>
     </scenes>
     <resources>

@@ -27,7 +27,8 @@ static NSString * const reuseIdentifier = @"Cell";
     
     [self initializeRewardsData];
     
-    ZleepManager *zm = [ZleepManager sharedInstance];
+    
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
 - (void) initializeRewardsData {
@@ -119,6 +120,11 @@ static NSString * const reuseIdentifier = @"Cell";
         
     }
                                
+}
+
+
+- (IBAction)backTapped:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
