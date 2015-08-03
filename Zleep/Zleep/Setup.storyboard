@@ -158,7 +158,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="gea-Oh-J7a">
                         <barButtonItem key="leftBarButtonItem" title="Select pet" id="SMF-FC-3X6"/>
-                        <barButtonItem key="rightBarButtonItem" title="Store" id="zWI-D6-fUW"/>
+                        <barButtonItem key="rightBarButtonItem" title="Store" id="zWI-D6-fUW">
+                            <connections>
+                                <action selector="storeButtonHit:" destination="9yR-xi-K14" id="22r-iV-yUm"/>
+                                <segue destination="kXM-Pv-hvv" kind="show" id="yrd-mS-TAq"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="endTime" destination="lsv-sy-MPu" id="cBP-nw-Feh"/>
@@ -187,6 +192,90 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfh-lo-JxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="194" y="315"/>
+        </scene>
+        <!--Rewards-->
+        <scene sceneID="3oq-fz-OhB">
+            <objects>
+                <collectionViewController id="kXM-Pv-hvv" customClass="RewardsCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="lFp-8n-ayJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zsh-XC-1Fy">
+                            <size key="itemSize" width="170" height="180"/>
+                            <size key="headerReferenceSize" width="50" height="65"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RewardsPrototypeCell" id="t0U-0r-fqx" customClass="RewardsViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="180"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RewardName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WM-dP-iPa">
+                                            <rect key="frame" x="30" y="8" width="110" height="19"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RewardInfo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IJ-K1-Kjw">
+                                            <rect key="frame" x="36" y="153" width="98" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SOn-ze-ij3">
+                                            <rect key="frame" x="23" y="27" width="125" height="125"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="imageView" destination="SOn-ze-ij3" id="YJM-aq-xec"/>
+                                    <outlet property="rewardInfo" destination="6IJ-K1-Kjw" id="J9U-vn-bfu"/>
+                                    <outlet property="rewardName" destination="3WM-dP-iPa" id="vTn-dC-dda"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RewardsHeader" id="liz-kR-ub4" customClass="RewardsHeaderView">
+                            <rect key="frame" x="0.0" y="64" width="600" height="65"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tap to unlock item" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NU3-qD-Dr8">
+                                    <rect key="frame" x="226" y="36" width="148" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Current Z's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tA5-5m-H0T">
+                                    <rect key="frame" x="8" y="7" width="584" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="centerX" secondItem="NU3-qD-Dr8" secondAttribute="centerX" id="RfA-K0-6An"/>
+                                <constraint firstAttribute="centerX" secondItem="tA5-5m-H0T" secondAttribute="centerX" id="TOH-Rn-iOM"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="currentZsLabel" destination="tA5-5m-H0T" id="GtQ-6G-OY7"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="kXM-Pv-hvv" id="ZkD-rd-Ten"/>
+                            <outlet property="delegate" destination="kXM-Pv-hvv" id="6l5-Cz-F4q"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Rewards" id="Cv8-kT-aer">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="qTc-92-xCm"/>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tTc-Q6-ig1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1695" y="-113"/>
         </scene>
     </scenes>
 </document>
