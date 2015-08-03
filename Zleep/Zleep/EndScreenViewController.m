@@ -8,6 +8,8 @@
 
 #import "EndScreenViewController.h"
 #import "ZleepManager.h"
+#import "inZleepViewController.h"
+#import "RewardsCollectionViewController.h"
 
 @interface EndScreenViewController ()
 
@@ -19,7 +21,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *leftApp;
 @property (weak, nonatomic) IBOutlet UILabel *pointsLostLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *pointsFromZleep;
+@property (weak, nonatomic) IBOutlet UILabel *pointsFromZleepLabel;
 
 @end
 
@@ -28,18 +30,7 @@
 @implementation EndScreenViewController
 
 
-//Configuring collecting Z's and what happens when "collect your z's!" button is tapped
 
-- (IBAction)collectZButtonTapped:(id)sender {
-}
-//
-////-(void) alarm
-////{
-//    EndScreenViewController *destination = [[UIStoryboard storyboardWithName:@"Zleep Manager" bundle:nil] instantiateInitialViewController];
-//    
-//    
-//    [self presentViewController:destination animated:YES completion:nil];
-//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -50,21 +41,54 @@
     
     
     //Will display the total of number of earned z's
-     self.zTotal.text =[@([[ZleepManager sharedInstance] totalZleepPoints]) stringValue];
+    self.zTotal.text =[NSString stringWithFormat:@"Total Zleep Points: %@",self.totalPoints];
     
     //wil indicate how long the user has left the app for
-   // self.leftApp.text=
+   //self.leftApp.text
+    self.leftApp.text=[NSString stringWithFormat:@"Left app for: %@ minute(s)", @(self.timeOutOfApp.integerValue/60)];
     
     
-    //will indicate how may points were lost due to leaving the app
     
-    //self.pointsLost.text=[@([[ZleepManager sharedInstance] pointsLost]) stringValue];
+    //will indicate how many points were lost due to leaving the app
     
-      // self.pointsLost.text = [NSString stringWithFormat:@"%ld", self.question.pointValue];
+    self.pointsLostLabel.text=[NSString stringWithFormat:@"Points lost from Zleep: %@", self.pointsLost];
     
-    //will indicate the total of z's that were collected that night after subtracting lost amount of points as well
-        //self.pointsLostFromZleep.text
+    //will indicate the amount of zleep points earned from this zleep cycle
+    self.pointsFromZleepLabel.text=[NSString stringWithFormat:@"Total points from zleep: %@", @(ceilf(self.pointsFromZleep.floatValue))];
+    
+   
+    
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
+
+
+//inZleepViewController *destination = [[UIStoryboard storyboardWithName:@"inZleep" bundle:nil] instantiateInitialViewController];
+//
+//destination.startDate = self.startTime.date;
+//
+//
+//
+//destination.endDate= self.endTime.date;
+//[self presentViewController:destination animated:YES completion:nil];
+
+
+
+
+-(IBAction)buttonTapped:(id)sender {
+    
+
+    
+    RewardsCollectionViewController *destination=[[UIStoryboard storyboardWithName:@"Rewards" bundle:nil]instantiateInitialViewController];
+    
+    
+    
+   
+    
+    [self.navigationController pushViewController:destination animated:YES];
+    
+    
+}
+
 
 
 - (void)didReceiveMemoryWarning {

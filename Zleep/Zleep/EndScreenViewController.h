@@ -12,7 +12,7 @@
 
 @property NSNumber *totalPoints;
 @property NSNumber *pointsLost;
-@property NSNumber *lengthOfZleep;
+@property NSNumber *pointsFromZleep;
 @property NSNumber *timeOutOfApp;
 
 
