@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0245.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="59y-dC-QFo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startUpSky" translatesAutoresizingMaskIntoConstraints="NO" id="59y-dC-QFo">
                                 <rect key="frame" x="-40" y="45" width="646" height="572"/>
                             </imageView>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="lsv-sy-MPu">
@@ -197,6 +197,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="IMG_0245.JPG" width="2448" height="3264"/>
+        <image name="startUpSky" width="2448" height="3264"/>
     </resources>
 </document>
