@@ -17,6 +17,9 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startUpSky" translatesAutoresizingMaskIntoConstraints="NO" id="59y-dC-QFo">
+                                <rect key="frame" x="-40" y="45" width="646" height="572"/>
+                            </imageView>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="lsv-sy-MPu">
                                 <rect key="frame" x="140" y="380.5" width="320" height="162"/>
                                 <color key="backgroundColor" red="0.1431775029" green="1" blue="0.12997611789999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -104,10 +107,13 @@
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="dhY-ma-Cy7" secondAttribute="centerX" constant="-4" id="3CS-Lh-YXK"/>
                             <constraint firstItem="qeW-df-xUY" firstAttribute="leading" secondItem="jSL-is-CyT" secondAttribute="leadingMargin" constant="-3" id="3fy-0U-ogD"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="59y-dC-QFo" secondAttribute="bottom" constant="-17" id="5Ei-95-xG4"/>
                             <constraint firstItem="dhY-ma-Cy7" firstAttribute="top" secondItem="fZD-9K-LPx" secondAttribute="bottom" constant="20" id="5mf-fv-iag"/>
                             <constraint firstAttribute="centerY" secondItem="b5Z-5c-2Nq" secondAttribute="centerY" constant="139" id="6HQ-mZ-ywx"/>
                             <constraint firstAttribute="centerX" secondItem="lsv-sy-MPu" secondAttribute="centerX" id="6zU-gG-s6r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="59y-dC-QFo" secondAttribute="trailing" constant="-22" id="8p7-4q-zpa"/>
                             <constraint firstItem="X9T-v4-vgD" firstAttribute="leading" secondItem="9ca-eD-JHd" secondAttribute="leading" id="BkS-bG-2pK"/>
+                            <constraint firstItem="59y-dC-QFo" firstAttribute="top" secondItem="lpQ-JY-nfg" secondAttribute="bottom" constant="-19" id="FQm-NU-lK1"/>
                             <constraint firstItem="qeW-df-xUY" firstAttribute="leading" secondItem="jSL-is-CyT" secondAttribute="leadingMargin" id="GFC-di-Ob2"/>
                             <constraint firstAttribute="centerX" secondItem="b5Z-5c-2Nq" secondAttribute="centerX" constant="-12" id="GSG-el-vcl"/>
                             <constraint firstItem="dhY-ma-Cy7" firstAttribute="top" secondItem="fZD-9K-LPx" secondAttribute="bottom" constant="24" id="Gys-5B-83g"/>
@@ -122,6 +128,7 @@
                             <constraint firstItem="lsv-sy-MPu" firstAttribute="top" secondItem="dhY-ma-Cy7" secondAttribute="bottom" constant="19" id="cqX-tG-rCi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9ca-eD-JHd" secondAttribute="trailing" constant="66" id="e8x-IX-Bha"/>
                             <constraint firstItem="4R0-Bd-iCd" firstAttribute="centerX" secondItem="lsv-sy-MPu" secondAttribute="centerX" constant="-11" id="f19-dr-IoD"/>
+                            <constraint firstItem="59y-dC-QFo" firstAttribute="leading" secondItem="jSL-is-CyT" secondAttribute="leadingMargin" constant="-56" id="fVG-b4-Mnp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9ca-eD-JHd" secondAttribute="trailing" constant="13" id="gfu-bU-R9d"/>
                             <constraint firstItem="X9T-v4-vgD" firstAttribute="top" secondItem="lpQ-JY-nfg" secondAttribute="bottom" constant="35" id="ghl-2X-Ea0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="X9T-v4-vgD" secondAttribute="trailing" constant="-9" id="jRO-Yt-wcG"/>
@@ -189,4 +196,7 @@
             <point key="canvasLocation" x="194" y="315"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="startUpSky" width="2448" height="3264"/>
+    </resources>
 </document>
