@@ -36,6 +36,9 @@
 		CA03A7721B66DEDB0019B2D4 /* ZleepManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA03A7711B66DEDB0019B2D4 /* ZleepManager.m */; };
 		D470E1381B685FD1001BB9E7 /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D470E1371B685FD1001BB9E7 /* SetupViewController.m */; };
 		D4E032D61B66DA8900380649 /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E032D51B66DA8900380649 /* BG.png */; };
+		D4E78ABC1B6F1E8000E7CBC9 /* IMG_0244.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D4E78ABB1B6F1E8000E7CBC9 /* IMG_0244.JPG */; };
+		D4E78AC01B6F208100E7CBC9 /* IMG_0245.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D4E78ABF1B6F208000E7CBC9 /* IMG_0245.JPG */; };
+		D4E78AC21B6F21B000E7CBC9 /* bench.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D4E78AC11B6F21B000E7CBC9 /* bench.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,9 @@
 		D470E1361B685FD1001BB9E7 /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupViewController.h; sourceTree = "<group>"; };
 		D470E1371B685FD1001BB9E7 /* SetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupViewController.m; sourceTree = "<group>"; };
 		D4E032D51B66DA8900380649 /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
+		D4E78ABB1B6F1E8000E7CBC9 /* IMG_0244.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0244.JPG; path = ../../../../Downloads/IMG_0244.JPG; sourceTree = "<group>"; };
+		D4E78ABF1B6F208000E7CBC9 /* IMG_0245.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0245.JPG; path = ../../../../Downloads/IMG_0245.JPG; sourceTree = "<group>"; };
+		D4E78AC11B6F21B000E7CBC9 /* bench.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bench.JPG; path = ../../../../Downloads/bench.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,10 +173,13 @@
 		21F7036A1B66D16B00C2E26B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D4E78ABF1B6F208000E7CBC9 /* IMG_0245.JPG */,
 				D4E032D51B66DA8900380649 /* BG.png */,
 				21F7036B1B66D16B00C2E26B /* Info.plist */,
 				21F7036C1B66D16B00C2E26B /* main.m */,
+				D4E78AC11B6F21B000E7CBC9 /* bench.JPG */,
 				3D5271FF1B684B7900848882 /* turtle_96x104.png */,
+				D4E78ABB1B6F1E8000E7CBC9 /* IMG_0244.JPG */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -290,20 +299,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				21F703911B66D1D900C2E26B /* Setup.storyboard in Resources */,
-				3D8A35CC1B69A1EF0074090F /* LaunchImage.launchimage in Resources */,
 				3CA4A30E1B6B0CA200477F53 /* naakt-hond.jpg in Resources */,
 				21F703951B66D20100C2E26B /* EndScreen.storyboard in Resources */,
+				D4E78AC21B6F21B000E7CBC9 /* bench.JPG in Resources */,
 				3CA4A30B1B6B0CA200477F53 /* dog-biscuits.jpg in Resources */,
 				D4E032D61B66DA8900380649 /* BG.png in Resources */,
 				3CEF32B51B6C1FB300995446 /* 296-1230341005ghUn.jpg in Resources */,
 				3D8A35D11B69A3380074090F /* Images.xcassets in Resources */,
 				3CA4A30F1B6B0CA200477F53 /* painting-of-labrador-with-toy.jpg in Resources */,
 				3C2C7A1F1B6AC5AF00F296B5 /* Rewards.storyboard in Resources */,
+				D4E78ABC1B6F1E8000E7CBC9 /* IMG_0244.JPG in Resources */,
 				3CA4A3111B6B0CA200477F53 /* pink-dog-toy.jpg in Resources */,
 				3CA4A3141B6B0CB900477F53 /* bags-of-colored-sugar-snacks.jpg in Resources */,
-				3D8A35CD1B69A1EF0074090F /* IMG_2292.imageset in Resources */,
 				3CA4A30D1B6B0CA200477F53 /* hand-clothes-brush.jpg in Resources */,
 				21F7037B1B66D16B00C2E26B /* LaunchScreen.xib in Resources */,
+				D4E78AC01B6F208100E7CBC9 /* IMG_0245.JPG in Resources */,
 				3CA4A3121B6B0CA200477F53 /* squeeze-toy.jpg in Resources */,
 				21F703931B66D1F000C2E26B /* inZleep.storyboard in Resources */,
 				3D5272001B684B7900848882 /* turtle_96x104.png in Resources */,
