@@ -36,12 +36,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.collectZ.backgroundColor=[UIColor whiteColor];
+    self.collectZ.backgroundColor=[UIColor clearColor];
     self.collectZ.layer.cornerRadius = 10;
     
     
     //Will display the total of number of earned z's
-    self.zTotal.text =[NSString stringWithFormat:@"Total Zleep Points: %@",self.totalPoints];
+    self.zTotal.text =[NSString stringWithFormat:@"Total Zleep Points: %@",@(ceilf(self.totalPoints.floatValue - self.pointsLost.floatValue))];
     
     //wil indicate how long the user has left the app for
    //self.leftApp.text
@@ -51,12 +51,14 @@
     
     //will indicate how many points were lost due to leaving the app
     
-    self.pointsLostLabel.text=[NSString stringWithFormat:@"Points lost from Zleep: %@", self.pointsLost];
+    self.pointsLostLabel.text=[NSString stringWithFormat:@"Points lost from Zleep: %@", @(ceilf(self.pointsLost.floatValue))];
     
     //will indicate the amount of zleep points earned from this zleep cycle
-    self.pointsFromZleepLabel.text=[NSString stringWithFormat:@"Total points from zleep: %@", @(ceilf(self.pointsFromZleep.floatValue))];
+    self.pointsFromZleepLabel.text=[NSString stringWithFormat:@"Total points from zleep: %@",
+                                    @(ceilf(self.pointsFromZleep.floatValue))];
+    [[ZleepManager sharedInstance] addZleepPoints:ceilf(self.totalPoints.floatValue - self.pointsLost.floatValue)];
     
-   
+    
     
     [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
@@ -65,9 +67,6 @@
 //inZleepViewController *destination = [[UIStoryboard storyboardWithName:@"inZleep" bundle:nil] instantiateInitialViewController];
 //
 //destination.startDate = self.startTime.date;
-//
-//
-//
 //destination.endDate= self.endTime.date;
 //[self presentViewController:destination animated:YES completion:nil];
 
@@ -75,17 +74,8 @@
 
 
 -(IBAction)buttonTapped:(id)sender {
-    
-
-    
     RewardsCollectionViewController *destination=[[UIStoryboard storyboardWithName:@"Rewards" bundle:nil]instantiateInitialViewController];
-    
-    
-    
-   
-    
     [self.navigationController pushViewController:destination animated:YES];
-    
     
 }
 
